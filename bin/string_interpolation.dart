@@ -66,4 +66,13 @@ void modernInterpolation() {
   final age = 42;
   final howOld = 'I am $age ${age == 1 ? 'year' : 'years'} old.';
   print(howOld);
+
+  List fruits = ['Strawberry', 'Coconut', 'Orange', 'Mango', 'Apple'];
+  StringBuffer buffer = StringBuffer();
+  for (String fruit in fruits) {
+    buffer.write(fruit);
+    buffer.write(' ');
+  }
+
+  print(buffer.toString());
 }
